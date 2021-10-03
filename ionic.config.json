@@ -1,0 +1,7 @@
+{
+  "name": "Bantr",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
