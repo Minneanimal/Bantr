@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+ion-header {
+  ion-toolbar {
+    font-family: "Lobster", cursive;
+    .logo {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.tabs {
+  margin-top: 20px;
+  ion-segment {
+    --background: var(--ion-color-primary);
+    ion-segment-button {
+      --border-width: 0;
+      --padding-start: 8px !important;
+      --padding-bottom: 3px !important;
+      --padding-end: 8px !important;
+      --padding-top: 3px !important;
+      --indicator-color: transparent;
+      --color-checked: var(--ion-color-light);
+      font-weight: bold;
+      border-radius: 22px;
+      --background-checked: var(--ion-color-secondary);
+    }
+  }
+}
+
+.chat-list {
+  background: var(--ion-color-light);
+  margin-top: 5px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .chats {
+    margin-top: 16px;
+  }
+}
