@@ -9,13 +9,13 @@ ion-header {
   ion-toolbar {
     .logo {
       font-family: "Lobster", cursive;
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
   }
 }
 
 .tabs {
-  margin-top: 20px;
+  --background: var(--ion-color-primary);
   ion-segment {
     --background: var(--ion-color-primary);
     ion-segment-button {

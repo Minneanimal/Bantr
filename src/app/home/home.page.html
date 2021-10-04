@@ -1,31 +1,21 @@
 <ion-header class="ion-no-border">
-  <ion-toolbar
-    mode="ios"
-    color="primary"
-    class="ion-no-padding username-container"
-  >
-    <ion-title size="small" color="secondary" class="username"
+  <ion-toolbar mode="ios" color="primary">
+    <ion-title color="secondary"
       ><em><strong>Bossgirl</strong></em></ion-title
     >
-  </ion-toolbar>
-  <ion-toolbar mode="ios" color="primary">
-    <ion-buttons slot="start">
-      <ion-menu-button auto-hide="false"></ion-menu-button>
-    </ion-buttons>
-    <ion-buttons slot="primary">
+    <ion-buttons slot="end">
       <ion-button>
-        <ion-icon slot="icon-only" name="camera-outline"></ion-icon>
+        <ion-icon slot="start" size="small" name="settings-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar mode="ios" color="primary">
     <ion-title class="logo">bantr</ion-title>
   </ion-toolbar>
-</ion-header>
-
-<ion-content color="primary">
-  <div class="tabs ion-padding">
+  <ion-toolbar mode="ios" class="tabs">
     <ion-segment mode="ios" value="chats" (ionChange)="segmentChanged($event)">
       <ion-segment-button value="chats">
-        <ion-label>Bantr</ion-label>
+        <ion-label>Chats</ion-label>
       </ion-segment-button>
       <ion-segment-button value="Status">
         <ion-label>Status</ion-label>
@@ -34,7 +24,10 @@
         <ion-label>Calls</ion-label>
       </ion-segment-button>
     </ion-segment>
-  </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="primary">
   <div class="chat-list" *ngIf="activeTab === 'chats'">
     <div class="recent-chats ion-padding">
       <div class="heading">
