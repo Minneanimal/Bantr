@@ -42,10 +42,14 @@
     </div>
   </div>
 </ion-content>
-<ion-footer>
-  <ion-toolbar>
-    <ion-input type="text" placeholder="Send a message..."></ion-input>
-    <ion-buttons slot="secondary">
+<ion-footer class="ion-no-border">
+  <ion-toolbar mode="ios" color="light">
+    <ion-input
+      class="ion-padding"
+      type="text"
+      placeholder="Send a message..."
+    ></ion-input>
+    <ion-buttons slot="end">
       <ion-button (click)="sendMessage()">
         <ion-icon slot="icon-only" size="small" name="send-sharp"></ion-icon>
       </ion-button>
