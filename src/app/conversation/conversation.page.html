@@ -1,0 +1,54 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button
+        text=""
+        color="dark"
+        defaultHref="home"
+      ></ion-back-button>
+    </ion-buttons>
+    <ion-title color="secondary" size="small"
+      ><em><strong>LDN152</strong></em></ion-title
+    >
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon size="small" slot="icon-only" name="call-outline"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon
+          size="small"
+          slot="icon-only"
+          name="videocam-outline"
+        ></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light" class="ion-padding">
+  <div class="conversation">
+    <div class="chat-section" id="chat">
+      <div class="chat">
+        <div class="yours messages">
+          <div class="message other">Hey!</div>
+        </div>
+        <div class="yours messages">
+          <div class="message other">You there?</div>
+        </div>
+        <div class="mine messages">
+          <div class="message">Great Thanks!</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-input type="text" placeholder="Send a message..."></ion-input>
+    <ion-buttons slot="secondary">
+      <ion-button (click)="sendMessage()">
+        <ion-icon slot="icon-only" size="small" name="send-sharp"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

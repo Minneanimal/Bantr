@@ -1,0 +1,60 @@
+ion-title {
+  padding-left: 0;
+  .contact-container {
+    p {
+      margin: 0;
+      padding-left: 0;
+    }
+  }
+}
+
+.conversation {
+  background: var(--ion-color-light);
+  margin-top: 5px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  .messages {
+    display: flex;
+    flex-direction: column;
+    .message {
+      border-radius: 18px;
+      padding: 18px 20px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
+  .yours {
+    align-items: flex-start;
+    span {
+      font-size: 0.7rem;
+      margin-left: 40px;
+    }
+    .message {
+      background: #eee;
+      position: relative;
+    }
+  }
+  .mine {
+    align-items: flex-end;
+    span {
+      font-size: 0.7rem;
+      margin-left: 40px;
+    }
+    .message {
+      background: var(--ion-color-tertiary);
+      position: relative;
+    }
+  }
+}
+
+ion-input {
+  border: 1px solid #ddd;
+  background: #ddd;
+  border-radius: 20px;
+  margin-left: 5px;
+}

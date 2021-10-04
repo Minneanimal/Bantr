@@ -1,5 +1,14 @@
 <ion-header class="ion-no-border">
-  <ion-toolbar color="primary">
+  <ion-toolbar
+    mode="ios"
+    color="primary"
+    class="ion-no-padding username-container"
+  >
+    <ion-title size="small" color="secondary" class="username"
+      ><em><strong>Bossgirl</strong></em></ion-title
+    >
+  </ion-toolbar>
+  <ion-toolbar mode="ios" color="primary">
     <ion-buttons slot="start">
       <ion-menu-button auto-hide="false"></ion-menu-button>
     </ion-buttons>
@@ -8,7 +17,7 @@
         <ion-icon slot="icon-only" name="camera-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
-    <ion-title class="logo">Bantr</ion-title>
+    <ion-title class="logo">bantr</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -40,12 +49,45 @@
       </div>
       <div class="chats">
         <ion-item-sliding>
+          <ion-item
+            detail="false"
+            color="light"
+            class="ion-no-padding"
+            routerLink="/conversation"
+          >
+            <ion-label class="ion-text-nowrap"
+              ><h2>LDN152</h2>
+              <p>typing...</p></ion-label
+            >
+            <ion-icon name="chatbubbles-sharp" color="warning"></ion-icon>
+          </ion-item>
+          <ion-item-options side="end">
+            <ion-item-option color="danger" (click)="delete()"
+              >Delete</ion-item-option
+            >
+          </ion-item-options>
+        </ion-item-sliding>
+        <ion-item-sliding>
+          <ion-item color="light" class="ion-no-padding">
+            <ion-label class="ion-text-nowrap"
+              ><h2>Ted342</h2>
+              <p>Some toher message.....</p></ion-label
+            >
+            <ion-icon name="chatbubbles-outline"></ion-icon>
+          </ion-item>
+          <ion-item-options side="end">
+            <ion-item-option color="danger" (click)="delete()"
+              >Delete</ion-item-option
+            >
+          </ion-item-options>
+        </ion-item-sliding>
+        <ion-item-sliding>
           <ion-item color="light" class="ion-no-padding">
             <ion-label class="ion-text-nowrap"
               ><h2>Ted Lasso</h2>
               <p>typing...</p></ion-label
             >
-            <ion-icon name="chatbubbles-sharp" color="warning"></ion-icon>
+            <ion-icon name="chatbubbles-outline"></ion-icon>
           </ion-item>
           <ion-item-options side="end">
             <ion-item-option color="danger" (click)="delete()"
@@ -73,35 +115,7 @@
               ><h2>Ted Lasso</h2>
               <p>typing...</p></ion-label
             >
-            <ion-icon name="chatbubbles-sharp" color="warning"></ion-icon>
-          </ion-item>
-          <ion-item-options side="end">
-            <ion-item-option color="danger" (click)="delete()"
-              >Delete</ion-item-option
-            >
-          </ion-item-options>
-        </ion-item-sliding>
-        <ion-item-sliding>
-          <ion-item color="light" class="ion-no-padding">
-            <ion-label class="ion-text-nowrap"
-              ><h2>Ted Lasso</h2>
-              <p>typing...</p></ion-label
-            >
-            <ion-icon name="chatbubbles-sharp" color="warning"></ion-icon>
-          </ion-item>
-          <ion-item-options side="end">
-            <ion-item-option color="danger" (click)="delete()"
-              >Delete</ion-item-option
-            >
-          </ion-item-options>
-        </ion-item-sliding>
-        <ion-item-sliding>
-          <ion-item color="light" class="ion-no-padding">
-            <ion-label class="ion-text-nowrap"
-              ><h2>Ted Lasso</h2>
-              <p>typing...</p></ion-label
-            >
-            <ion-icon name="chatbubbles-sharp" color="warning"></ion-icon>
+            <ion-icon name="chatbubbles-outline"></ion-icon>
           </ion-item>
           <ion-item-options side="end">
             <ion-item-option color="danger" (click)="delete()"
